@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "updated_at": "2026-10-08T12:49:52-04:00",
+  "updated_at": "2026-10-08T15:07:22-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -43,11 +43,11 @@
       "id": "real",
       "name": "Real",
       "draw_time": "12:55 PM",
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "numbers": [
-        "40",
-        "50",
-        "45"
+        "44",
+        "49",
+        "59"
       ],
       "status": "done"
     },
@@ -55,11 +55,11 @@
       "id": "loteka-tarde",
       "name": "Loteka Tarde",
       "draw_time": "1:30 PM",
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "numbers": [
-        "85",
-        "61",
-        "12"
+        "39",
+        "24",
+        "02"
       ],
       "status": "done"
     },
@@ -67,11 +67,11 @@
       "id": "gana-mas",
       "name": "Nacional Gana Más",
       "draw_time": "2:30 PM",
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "numbers": [
-        "64",
-        "84",
-        "16"
+        "98",
+        "33",
+        "69"
       ],
       "status": "done"
     },
