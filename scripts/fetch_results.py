@@ -41,12 +41,107 @@ WATCHLIST = {
     "Nacional Noche":    ("nacional-noche",   "Nacional Noche",    "9:00 PM",  21 * 60),
 }
 
-GRACE_MIN = 30        # tolerancia de publicación después de la hora del sorteo
+GRACE_MIN = 5         # minutos tras la hora del sorteo para considerarlo "debió salir ya"
 RETRY_EVERY_MIN = 15  # espera entre reintentos
 MAX_RETRIES = 6       # hasta 90 minutos de reintentos
 
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120.0 Safari/537.36")
+
+# --- Loterías de EE. UU. (NY Open Data, funciona sin API key) ---
+PB_URL = "https://data.ny.gov/resource/d6yy-54nr.json?$limit=3&$order=draw_date%20DESC"
+MM_URL = "https://data.ny.gov/resource/5xaw-6ayf.json?$limit=3&$order=draw_date%20DESC"
+
+US_GAMES = {
+    "powerball":     {"name": "Powerball",     "draw_time": "10:59 PM", "draw_days": "Lun · Mié · Sáb"},
+    "mega-millions": {"name": "Mega Millions", "draw_time": "11:00 PM", "draw_days": "Mar · Vie"},
+}
+
+US_KEEP = 2  # últimos 2 sorteos por juego
+
+
+def fetch_json(url: str):
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def parse_powerball(rows):
+    """winning_numbers: "16 23 32 36 54 09" = 5 blancas + Powerball al final."""
+    out = []
+    g = US_GAMES["powerball"]
+    for row in rows:
+        date = (row.get("draw_date") or "")[:10]
+        nums = (row.get("winning_numbers") or "").split()
+        if len(date) != 10 or len(nums) < 6:
+            continue
+        out.append({"id": "powerball", "name": g["name"],
+                    "draw_time": g["draw_time"], "draw_days": g["draw_days"],
+                    "date": date, "numbers": nums[:5], "bonus": nums[5],
+                    "multiplier": row.get("multiplier"), "status": "done"})
+    return out
+
+
+def parse_megamillions(rows):
+    """winning_numbers: 5 blancas; mega_ball por separado."""
+    out = []
+    g = US_GAMES["mega-millions"]
+    for row in rows:
+        date = (row.get("draw_date") or "")[:10]
+        nums = (row.get("winning_numbers") or "").split()
+        bonus = (row.get("mega_ball") or "").strip()
+        if len(date) != 10 or len(nums) < 5 or not bonus:
+            continue
+        out.append({"id": "mega-millions", "name": g["name"],
+                    "draw_time": g["draw_time"], "draw_days": g["draw_days"],
+                    "date": date, "numbers": nums[:5], "bonus": bonus,
+                    "multiplier": None, "status": "done"})
+    return out
+
+
+def fetch_us_lotteries():
+    """Últimos sorteos de Powerball y Mega Millions desde NY Open Data."""
+    fresh = []
+    try:
+        fresh += parse_powerball(fetch_json(PB_URL))
+    except Exception as e:
+        print(f"WARN: no se pudo obtener Powerball: {e}", file=sys.stderr)
+    try:
+        fresh += parse_megamillions(fetch_json(MM_URL))
+    except Exception as e:
+        print(f"WARN: no se pudo obtener Mega Millions: {e}", file=sys.stderr)
+    return fresh
+
+
+def load_previous_us(path="data.json"):
+    """Carga la sección us_lotteries del data.json anterior. [] si no existe."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("us_lotteries", []) or []
+    except (FileNotFoundError, json.JSONDecodeError, KeyError, AttributeError):
+        return []
+
+
+def merge_us_lotteries(prev, fresh):
+    """Fusión: lo nuevo de la API gana; conserva anteriores (máx US_KEEP por juego).
+    Si la API falla, se conserva todo lo anterior: nunca borra."""
+    seen = set()
+    merged = []
+    for entry in fresh + prev:
+        if not isinstance(entry, dict):
+            continue
+        key = (entry.get("id"), entry.get("date"))
+        if key in seen or not entry.get("date"):
+            continue
+        seen.add(key)
+        merged.append(entry)
+    out = []
+    for gid in ("powerball", "mega-millions"):
+        group = sorted((e for e in merged if e.get("id") == gid),
+                       key=lambda e: e["date"], reverse=True)
+        out.extend(group[:US_KEEP])
+    return out
 
 
 def fetch_html(url: str) -> str:
@@ -179,6 +274,7 @@ def main() -> int:
         "updated_at": datetime.now(DR_TZ).isoformat(timespec="seconds"),
         "source": SOURCE_URL,
         "results": results,
+        "us_lotteries": merge_us_lotteries(load_previous_us(), fetch_us_lotteries()),
     }
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
