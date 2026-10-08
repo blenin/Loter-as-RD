@@ -1,103 +1,151 @@
 {
   "date": "2026-10-08",
-  "updated_at": "2026-10-08T05:10:58-04:00",
+  "updated_at": "2026-10-08T06:59:50-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
       "id": "la-primera",
       "name": "La Primera",
       "draw_time": "12:00 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "01",
+        "19",
+        "15"
+      ],
+      "status": "done"
     },
     {
       "id": "lotedom",
       "name": "LoteDom",
       "draw_time": "12:00 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "84",
+        "20",
+        "60"
+      ],
+      "status": "done"
     },
     {
       "id": "la-suerte",
       "name": "La Suerte",
       "draw_time": "12:30 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "02",
+        "01",
+        "57"
+      ],
+      "status": "done"
     },
     {
       "id": "real",
       "name": "Real",
       "draw_time": "12:55 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "40",
+        "50",
+        "45"
+      ],
+      "status": "done"
     },
     {
       "id": "loteka-tarde",
       "name": "Loteka Tarde",
       "draw_time": "1:30 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "85",
+        "61",
+        "12"
+      ],
+      "status": "done"
     },
     {
       "id": "gana-mas",
       "name": "Nacional Gana Más",
       "draw_time": "2:30 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "64",
+        "84",
+        "16"
+      ],
+      "status": "done"
     },
     {
       "id": "la-suerte-noche",
       "name": "La Suerte Noche",
       "draw_time": "6:00 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "69",
+        "53",
+        "38"
+      ],
+      "status": "done"
     },
     {
       "id": "la-primera-noche",
       "name": "La Primera Noche",
       "draw_time": "7:00 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "18",
+        "01",
+        "54"
+      ],
+      "status": "done"
     },
     {
       "id": "loteka",
       "name": "Loteka",
       "draw_time": "7:50 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "80",
+        "74",
+        "76"
+      ],
+      "status": "done"
     },
     {
       "id": "real-noche",
       "name": "Real Noche",
       "draw_time": "8:00 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "04",
+        "39",
+        "10"
+      ],
+      "status": "done"
     },
     {
       "id": "leidsa",
       "name": "Leidsa",
       "draw_time": "8:50 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "15",
+        "65",
+        "66"
+      ],
+      "status": "done"
     },
     {
       "id": "nacional-noche",
       "name": "Nacional Noche",
       "draw_time": "9:00 PM",
-      "date": "2026-10-08",
-      "numbers": [],
-      "status": "pending"
+      "date": "2026-10-07",
+      "numbers": [
+        "14",
+        "59",
+        "00"
+      ],
+      "status": "done"
     }
   ]
 }
