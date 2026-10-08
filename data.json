@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "updated_at": "2026-10-07T20:44:51-04:00",
+  "updated_at": "2026-10-07T21:52:43-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -116,24 +116,36 @@
       "name": "Real Noche",
       "draw_time": "8:00 PM",
       "date": "2026-10-07",
-      "numbers": [],
-      "status": "pending"
+      "numbers": [
+        "04",
+        "39",
+        "10"
+      ],
+      "status": "done"
     },
     {
       "id": "leidsa",
       "name": "Leidsa",
       "draw_time": "8:50 PM",
       "date": "2026-10-07",
-      "numbers": [],
-      "status": "pending"
+      "numbers": [
+        "15",
+        "65",
+        "66"
+      ],
+      "status": "done"
     },
     {
       "id": "nacional-noche",
       "name": "Nacional Noche",
       "draw_time": "9:00 PM",
       "date": "2026-10-07",
-      "numbers": [],
-      "status": "pending"
+      "numbers": [
+        "14",
+        "59",
+        "00"
+      ],
+      "status": "done"
     }
   ]
 }
