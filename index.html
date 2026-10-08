@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loterías RD · Resultados de hoy</title>
+<meta name="description" content="Resultados de las loterías dominicanas actualizados varias veces al día.">
+<style>
+  :root{
+    --bg:#0a0f1e; --bg2:#101831; --card:#162040; --card2:#1b2850;
+    --gold:#f5c518; --red:#ce1126; --blue:#002d62;
+    --text:#f2f4fb; --muted:#9aa3c0; --green:#2fd08c;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:radial-gradient(1200px 600px at 50% -10%,#182452 0%,var(--bg) 55%) fixed, var(--bg);
+    color:var(--text); min-height:100vh; padding:0 0 60px;
+  }
+  header{
+    text-align:center; padding:44px 20px 10px; position:relative; overflow:hidden;
+  }
+  header .flag{font-size:34px; letter-spacing:6px}
+  h1{font-size:clamp(28px,5vw,44px); font-weight:800; letter-spacing:.5px; margin-top:8px}
+  h1 .rd{color:var(--gold)}
+  .subtitle{color:var(--muted); margin-top:6px; font-size:15px}
+  .updated{
+    display:inline-flex; align-items:center; gap:8px; margin-top:14px;
+    background:rgba(245,197,24,.12); border:1px solid rgba(245,197,24,.35);
+    color:var(--gold); border-radius:999px; padding:8px 18px; font-size:14px; font-weight:600;
+  }
+  .updated .dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);animation:pulse 2s infinite}
+  @keyframes pulse{50%{opacity:.5}}
+  main{max-width:1100px; margin:26px auto 0; padding:0 18px}
+  .section-title{
+    font-size:13px; text-transform:uppercase; letter-spacing:2px; color:var(--muted);
+    margin:30px 4px 14px; display:flex; align-items:center; gap:10px;
+  }
+  .section-title::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,#2a3763,transparent)}
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
+  .card{
+    background:linear-gradient(160deg,var(--card) 0%,var(--card2) 100%);
+    border:1px solid #2a3763; border-radius:18px; padding:20px;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .card:hover{transform:translateY(-3px); box-shadow:0 12px 30px rgba(0,0,0,.45)}
+  .card-top{display:flex; align-items:center; gap:12px; margin-bottom:14px}
+  .badge{
+    width:44px;height:44px;border-radius:12px; flex:none;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:19px;color:#fff;
+    background:linear-gradient(135deg,var(--red),var(--blue));
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.25);
+  }
+  .card-name{font-weight:700;font-size:17px}
+  .card-time{font-size:12.5px;color:var(--muted)}
+  .balls{display:flex; gap:12px; justify-content:center; margin:16px 0 6px}
+  .ball{
+    width:62px;height:62px;border-radius:50%;
+    background:radial-gradient(circle at 32% 28%,#fff8 0%,transparent 40%),linear-gradient(145deg,#ffe14d,#e8a800);
+    color:#4a3200; font-weight:800; font-size:24px;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 16px rgba(245,197,24,.28), inset 0 -3px 8px rgba(0,0,0,.18);
+  }
+  .card-date{text-align:center;color:var(--muted);font-size:12.5px;margin-top:8px}
+  .pending .balls{filter:grayscale(.4) opacity(.5)}
+  .pending-note{
+    text-align:center; color:var(--gold); font-size:13px; font-weight:600;
+    background:rgba(245,197,24,.08); border-radius:10px; padding:9px; margin-top:4px;
+  }
+  footer{max-width:1100px;margin:44px auto 0;padding:0 18px;color:var(--muted);font-size:12.5px;line-height:1.7}
+  footer .warn{
+    background:rgba(206,17,38,.10); border:1px solid rgba(206,17,38,.4);
+    border-radius:14px; padding:16px 18px; margin-bottom:16px; color:#f0b3ba;
+  }
+  footer .warn strong{color:#ff8f9c}
+  footer p{margin-bottom:8px}
+  @media(max-width:520px){.balls{gap:8px}.ball{width:54px;height:54px;font-size:21px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="flag">🇩🇴</div>
+  <h1>Loterías <span class="rd">RD</span></h1>
+  <p class="subtitle">Resultados de los sorteos dominicanos · actualizados varias veces al día</p>
+  <div class="updated"><span class="dot"></span><span id="updated-label">Cargando…</span></div>
+</header>
+
+<main>
+  <div class="section-title">☀️ Sorteos del día</div>
+  <div class="grid" id="grid-dia"></div>
+
+  <div class="section-title">🌙 Sorteos de la noche</div>
+  <div class="grid" id="grid-noche"></div>
+</main>
+
+<footer>
+  <div class="warn">
+    <strong>⚠️ Aviso:</strong> Esta es una página informativa y <strong>no</strong> es un canal oficial de ninguna lotería.
+    Los resultados pueden contener errores. Verifica siempre tus números en los canales oficiales de cada lotería
+    antes de reclamar cualquier premio.
+  </div>
+  <p>🎲 Juega con responsabilidad. Los juegos de azar están prohibidos para menores de 18 años.</p>
+  <p>Fuente de datos: portal informativo de resultados · Esta página se actualiza automáticamente.</p>
+</footer>
+
+<script>
+const DAY_IDS = ["la-primera","lotedom","la-suerte","real","loteka-tarde","gana-mas"];
+
+function fmtDate(iso){
+  const d = new Date(iso + "T12:00:00");
+  return d.toLocaleDateString("es-DO",{weekday:"long",day:"numeric",month:"long"});
+}
+function timeAgo(iso){
+  const mins = Math.max(0, Math.round((Date.now() - new Date(iso).getTime())/60000));
+  if(mins < 1) return "hace un momento";
+  if(mins < 60) return "hace " + mins + " min";
+  const h = Math.floor(mins/60);
+  return "hace " + h + " h" + (h>1?"s":"");
+}
+
+function card(r){
+  const initials = r.name.split(" ").map(w=>w[0]).slice(0,2).join("");
+  const balls = r.status === "done"
+    ? `<div class="balls">${r.numbers.map(n=>`<div class="ball">${n}</div>`).join("")}</div>
+       <div class="card-date">${fmtDate(r.date)}</div>`
+    : `<div class="balls"><div class="ball">?</div><div class="ball">?</div><div class="ball">?</div></div>
+       <div class="pending-note">Sorteo pendiente · ${r.draw_time}</div>`;
+  return `<div class="card ${r.status}">
+    <div class="card-top"><div class="badge">${initials}</div>
+    <div><div class="card-name">${r.name}</div><div class="card-time">🕐 ${r.draw_time}</div></div></div>
+    ${balls}</div>`;
+}
+
+fetch("data.json?v=" + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    const day = d.results.filter(r => DAY_IDS.includes(r.id));
+    const night = d.results.filter(r => !DAY_IDS.includes(r.id));
+    document.getElementById("grid-dia").innerHTML = day.map(card).join("");
+    document.getElementById("grid-noche").innerHTML = night.map(card).join("");
+    document.getElementById("updated-label").textContent =
+      "Actualizado " + timeAgo(d.updated_at) + " · " + fmtDate(d.date);
+  })
+  .catch(() => {
+    document.getElementById("updated-label").textContent = "No se pudieron cargar los resultados";
+  });
+
+// refresca la página cada 10 minutos por si hay datos nuevos
+setTimeout(() => location.reload(), 10 * 60 * 1000);
+</script>
+</body>
+</html>
