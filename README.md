@@ -10,9 +10,9 @@ automáticamente varias veces al día.
 - `scripts/fetch_results.py` — descarga la página de resultados (portal
   informativo, no oficial), extrae los 3 premios de cada sorteo desde sus
   datos estructurados JSON-LD y reescribe `data.json`.
-- `.github/workflows/update.yml` — GitHub Action que corre el script
-  4 veces al día (1:30 PM, 3:30 PM, 9:30 PM y 10:30 PM hora dominicana)
-  y publica los cambios automáticamente.
+- `.github/workflows/update.yml` — GitHub Action que corre el script 11 veces al día,
+  5 minutos después de cada sorteo, y publica los cambios automáticamente.
+  Si un sorteo aún no publicó sus números, el script reintenta cada 15 minutos.
 
 ## Publicar en GitHub Pages
 
