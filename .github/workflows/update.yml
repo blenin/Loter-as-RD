@@ -1,0 +1,30 @@
+name: Actualizar resultados
+
+on:
+  schedule:
+    # Horas en UTC. República Dominicana = UTC-4 todo el año.
+    # Corre a las 1:30 PM, 3:30 PM, 9:30 PM y 10:30 PM hora dominicana,
+    # después de los sorteos del mediodía, la tarde y la noche.
+    - cron: "30 17,19,1,2 * * *"
+  workflow_dispatch:  # permite ejecutarlo manualmente desde GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Buscar resultados y actualizar data.json
+        run: python3 scripts/fetch_results.py
+      - name: Publicar cambios si hay resultados nuevos
+        run: |
+          git config user.name "loteria-bot"
+          git config user.email "loteria-bot@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || git commit -m "Resultados actualizados $(date -u +%Y-%m-%d\ %H:%M\ UTC)"
+          git push
