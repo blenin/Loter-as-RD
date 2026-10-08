@@ -3,9 +3,18 @@ name: Actualizar resultados
 on:
   schedule:
     # Horas en UTC. República Dominicana = UTC-4 todo el año.
-    # Corre a las 1:30 PM, 3:30 PM, 9:30 PM y 10:30 PM hora dominicana,
-    # después de los sorteos del mediodía, la tarde y la noche.
-    - cron: "30 17,19,1,2 * * *"
+    # Cada corrida es 5 minutos después de la hora del sorteo.
+    - cron: "5 16 * * *"   # 12:05 PM DR — La Primera, LoteDom
+    - cron: "35 16 * * *"  # 12:35 PM DR — La Suerte
+    - cron: "0 17 * * *"   # 1:00 PM DR — Real
+    - cron: "35 17 * * *"  # 1:35 PM DR — Loteka Tarde
+    - cron: "35 18 * * *"  # 2:35 PM DR — Gana Más
+    - cron: "5 22 * * *"   # 6:05 PM DR — La Suerte Noche
+    - cron: "5 23 * * *"   # 7:05 PM DR — La Primera Noche
+    - cron: "55 23 * * *"  # 7:55 PM DR — Loteka
+    - cron: "5 0 * * *"    # 8:05 PM DR — Real Noche
+    - cron: "55 0 * * *"   # 8:55 PM DR — Leidsa
+    - cron: "5 1 * * *"    # 9:05 PM DR — Nacional Noche
   workflow_dispatch:  # permite ejecutarlo manualmente desde GitHub
 
 permissions:
@@ -27,4 +36,5 @@ jobs:
           git config user.email "loteria-bot@users.noreply.github.com"
           git add data.json
           git diff --cached --quiet || git commit -m "Resultados actualizados $(date -u +%Y-%m-%d\ %H:%M\ UTC)"
+          git pull --rebase || true
           git push
