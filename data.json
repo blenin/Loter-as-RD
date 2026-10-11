@@ -1,6 +1,6 @@
 {
   "date": "2026-10-10",
-  "updated_at": "2026-10-10T21:04:29-04:00",
+  "updated_at": "2026-10-10T21:46:54-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -139,11 +139,11 @@
       "id": "nacional-noche",
       "name": "Nacional Noche",
       "draw_time": "9:00 PM",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "numbers": [
-        "71",
-        "98",
-        "99"
+        "30",
+        "47",
+        "97"
       ],
       "status": "done"
     }
