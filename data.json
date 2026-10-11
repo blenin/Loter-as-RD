@@ -1,6 +1,6 @@
 {
   "date": "2026-10-11",
-  "updated_at": "2026-10-11T17:39:33-04:00",
+  "updated_at": "2026-10-11T19:50:03-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -91,11 +91,11 @@
       "id": "la-primera-noche",
       "name": "La Primera Noche",
       "draw_time": "7:00 PM",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "numbers": [
-        "89",
-        "92",
-        "84"
+        "59",
+        "76",
+        "97"
       ],
       "status": "done"
     },
@@ -139,11 +139,11 @@
       "id": "nacional-noche",
       "name": "Nacional Noche",
       "draw_time": "9:00 PM",
-      "date": "2026-10-10",
+      "date": "2026-10-11",
       "numbers": [
-        "30",
-        "47",
-        "97"
+        "78",
+        "72",
+        "43"
       ],
       "status": "done"
     }
