@@ -1,6 +1,6 @@
 {
   "date": "2026-10-10",
-  "updated_at": "2026-10-10T17:55:52-04:00",
+  "updated_at": "2026-10-10T21:04:29-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -79,11 +79,11 @@
       "id": "la-suerte-noche",
       "name": "La Suerte Noche",
       "draw_time": "6:00 PM",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "numbers": [
-        "53",
-        "91",
-        "46"
+        "57",
+        "46",
+        "15"
       ],
       "status": "done"
     },
@@ -91,11 +91,11 @@
       "id": "la-primera-noche",
       "name": "La Primera Noche",
       "draw_time": "7:00 PM",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "numbers": [
-        "70",
-        "72",
-        "85"
+        "89",
+        "92",
+        "84"
       ],
       "status": "done"
     },
@@ -103,11 +103,11 @@
       "id": "loteka",
       "name": "Loteka",
       "draw_time": "7:50 PM",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "numbers": [
-        "27",
-        "44",
-        "87"
+        "77",
+        "02",
+        "13"
       ],
       "status": "done"
     },
@@ -115,11 +115,11 @@
       "id": "real-noche",
       "name": "Real Noche",
       "draw_time": "8:00 PM",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "numbers": [
-        "96",
-        "43",
-        "08"
+        "97",
+        "92",
+        "85"
       ],
       "status": "done"
     },
@@ -127,11 +127,11 @@
       "id": "leidsa",
       "name": "Leidsa",
       "draw_time": "8:50 PM",
-      "date": "2026-10-09",
+      "date": "2026-10-10",
       "numbers": [
-        "68",
-        "65",
-        "59"
+        "47",
+        "55",
+        "19"
       ],
       "status": "done"
     },
