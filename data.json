@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "updated_at": "2026-10-12T19:44:45-04:00",
+  "updated_at": "2026-10-12T21:25:20-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -103,11 +103,11 @@
       "id": "loteka",
       "name": "Loteka",
       "draw_time": "7:50 PM",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "numbers": [
-        "88",
-        "99",
-        "61"
+        "11",
+        "36",
+        "15"
       ],
       "status": "done"
     },
@@ -115,11 +115,11 @@
       "id": "real-noche",
       "name": "Real Noche",
       "draw_time": "8:00 PM",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "numbers": [
-        "84",
-        "11",
-        "49"
+        "73",
+        "03",
+        "00"
       ],
       "status": "done"
     },
@@ -127,11 +127,11 @@
       "id": "leidsa",
       "name": "Leidsa",
       "draw_time": "8:50 PM",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "numbers": [
-        "38",
-        "10",
-        "35"
+        "11",
+        "90",
+        "94"
       ],
       "status": "done"
     },
@@ -139,11 +139,11 @@
       "id": "nacional-noche",
       "name": "Nacional Noche",
       "draw_time": "9:00 PM",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "numbers": [
-        "78",
-        "72",
-        "43"
+        "82",
+        "12",
+        "67"
       ],
       "status": "done"
     }
