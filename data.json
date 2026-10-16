@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "updated_at": "2026-10-15T17:39:42-04:00",
+  "updated_at": "2026-10-15T20:45:44-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -79,11 +79,11 @@
       "id": "la-suerte-noche",
       "name": "La Suerte Noche",
       "draw_time": "6:00 PM",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "numbers": [
-        "36",
-        "88",
-        "35"
+        "93",
+        "30",
+        "51"
       ],
       "status": "done"
     },
@@ -91,11 +91,11 @@
       "id": "la-primera-noche",
       "name": "La Primera Noche",
       "draw_time": "7:00 PM",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "numbers": [
-        "28",
-        "02",
-        "97"
+        "54",
+        "18",
+        "85"
       ],
       "status": "done"
     },
@@ -103,11 +103,11 @@
       "id": "loteka",
       "name": "Loteka",
       "draw_time": "7:50 PM",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "numbers": [
-        "36",
-        "56",
-        "20"
+        "52",
+        "51",
+        "11"
       ],
       "status": "done"
     },
@@ -115,11 +115,11 @@
       "id": "real-noche",
       "name": "Real Noche",
       "draw_time": "8:00 PM",
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "numbers": [
-        "09",
-        "26",
-        "19"
+        "30",
+        "13",
+        "11"
       ],
       "status": "done"
     },
