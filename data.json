@@ -1,17 +1,17 @@
 {
   "date": "2026-10-16",
-  "updated_at": "2026-10-16T01:34:00-04:00",
+  "updated_at": "2026-10-16T15:30:38-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
       "id": "la-primera",
       "name": "La Primera",
       "draw_time": "12:00 PM",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "numbers": [
-        "87",
-        "42",
-        "24"
+        "70",
+        "94",
+        "82"
       ],
       "status": "done"
     },
@@ -19,11 +19,11 @@
       "id": "lotedom",
       "name": "LoteDom",
       "draw_time": "12:00 PM",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "numbers": [
-        "60",
-        "08",
-        "80"
+        "46",
+        "42",
+        "83"
       ],
       "status": "done"
     },
@@ -31,11 +31,11 @@
       "id": "la-suerte",
       "name": "La Suerte",
       "draw_time": "12:30 PM",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "numbers": [
-        "96",
-        "12",
-        "30"
+        "65",
+        "69",
+        "79"
       ],
       "status": "done"
     },
@@ -43,11 +43,11 @@
       "id": "real",
       "name": "Real",
       "draw_time": "12:55 PM",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "numbers": [
-        "98",
-        "33",
-        "05"
+        "76",
+        "01",
+        "41"
       ],
       "status": "done"
     },
@@ -55,11 +55,11 @@
       "id": "loteka-tarde",
       "name": "Loteka Tarde",
       "draw_time": "1:30 PM",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "numbers": [
-        "39",
-        "81",
-        "94"
+        "80",
+        "84",
+        "84"
       ],
       "status": "done"
     },
@@ -67,11 +67,11 @@
       "id": "gana-mas",
       "name": "Nacional Gana Más",
       "draw_time": "2:30 PM",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "numbers": [
-        "92",
-        "42",
-        "07"
+        "46",
+        "08",
+        "83"
       ],
       "status": "done"
     },
