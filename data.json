@@ -1,6 +1,6 @@
 {
   "date": "2026-10-17",
-  "updated_at": "2026-10-17T14:23:38-04:00",
+  "updated_at": "2026-10-17T14:58:28-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -67,11 +67,11 @@
       "id": "gana-mas",
       "name": "Nacional Gana Más",
       "draw_time": "2:30 PM",
-      "date": "2026-10-16",
+      "date": "2026-10-17",
       "numbers": [
-        "46",
-        "08",
-        "83"
+        "70",
+        "01",
+        "66"
       ],
       "status": "done"
     },
