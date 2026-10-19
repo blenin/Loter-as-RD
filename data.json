@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "updated_at": "2026-10-18T21:36:41-04:00",
+  "updated_at": "2026-10-18T22:22:41-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -55,11 +55,11 @@
       "id": "loteka-tarde",
       "name": "Loteka Tarde",
       "draw_time": "1:30 PM",
-      "date": "2026-10-17",
+      "date": "2026-10-18",
       "numbers": [
-        "75",
-        "92",
-        "32"
+        "28",
+        "12",
+        "81"
       ],
       "status": "done"
     },
