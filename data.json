@@ -1,17 +1,17 @@
 {
   "date": "2026-10-21",
-  "updated_at": "2026-10-21T01:46:48-04:00",
+  "updated_at": "2026-10-21T16:03:16-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
       "id": "la-primera",
       "name": "La Primera",
       "draw_time": "12:00 PM",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "numbers": [
-        "44",
+        "69",
         "40",
-        "11"
+        "49"
       ],
       "status": "done"
     },
@@ -19,11 +19,11 @@
       "id": "lotedom",
       "name": "LoteDom",
       "draw_time": "12:00 PM",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "numbers": [
-        "13",
-        "76",
-        "29"
+        "56",
+        "83",
+        "03"
       ],
       "status": "done"
     },
@@ -31,11 +31,11 @@
       "id": "la-suerte",
       "name": "La Suerte",
       "draw_time": "12:30 PM",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "numbers": [
-        "92",
-        "61",
-        "05"
+        "91",
+        "82",
+        "10"
       ],
       "status": "done"
     },
@@ -43,11 +43,11 @@
       "id": "real",
       "name": "Real",
       "draw_time": "12:55 PM",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "numbers": [
-        "71",
-        "05",
-        "73"
+        "28",
+        "61",
+        "58"
       ],
       "status": "done"
     },
@@ -55,11 +55,11 @@
       "id": "loteka-tarde",
       "name": "Loteka Tarde",
       "draw_time": "1:30 PM",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "numbers": [
         "68",
-        "72",
-        "72"
+        "99",
+        "11"
       ],
       "status": "done"
     },
@@ -67,11 +67,11 @@
       "id": "gana-mas",
       "name": "Nacional Gana Más",
       "draw_time": "2:30 PM",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "numbers": [
-        "87",
-        "77",
-        "29"
+        "13",
+        "60",
+        "74"
       ],
       "status": "done"
     },
@@ -188,6 +188,23 @@
       "name": "Mega Millions",
       "draw_time": "11:00 PM",
       "draw_days": "Mar · Vie",
+      "date": "2026-10-20",
+      "numbers": [
+        "13",
+        "28",
+        "33",
+        "35",
+        "48"
+      ],
+      "bonus": "03",
+      "multiplier": null,
+      "status": "done"
+    },
+    {
+      "id": "mega-millions",
+      "name": "Mega Millions",
+      "draw_time": "11:00 PM",
+      "draw_days": "Mar · Vie",
       "date": "2026-10-16",
       "numbers": [
         "02",
@@ -197,23 +214,6 @@
         "68"
       ],
       "bonus": "11",
-      "multiplier": null,
-      "status": "done"
-    },
-    {
-      "id": "mega-millions",
-      "name": "Mega Millions",
-      "draw_time": "11:00 PM",
-      "draw_days": "Mar · Vie",
-      "date": "2026-10-13",
-      "numbers": [
-        "11",
-        "12",
-        "15",
-        "40",
-        "66"
-      ],
-      "bonus": "17",
       "multiplier": null,
       "status": "done"
     }
