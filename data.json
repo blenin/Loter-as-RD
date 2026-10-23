@@ -1,17 +1,17 @@
 {
   "date": "2026-10-23",
-  "updated_at": "2026-10-23T01:48:30-04:00",
+  "updated_at": "2026-10-23T15:54:30-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
       "id": "la-primera",
       "name": "La Primera",
       "draw_time": "12:00 PM",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "numbers": [
-        "83",
-        "59",
-        "56"
+        "61",
+        "82",
+        "75"
       ],
       "status": "done"
     },
@@ -19,11 +19,11 @@
       "id": "lotedom",
       "name": "LoteDom",
       "draw_time": "12:00 PM",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "numbers": [
-        "24",
-        "47",
-        "44"
+        "89",
+        "52",
+        "55"
       ],
       "status": "done"
     },
@@ -31,11 +31,11 @@
       "id": "la-suerte",
       "name": "La Suerte",
       "draw_time": "12:30 PM",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "numbers": [
-        "40",
-        "19",
-        "94"
+        "25",
+        "16",
+        "36"
       ],
       "status": "done"
     },
@@ -43,11 +43,11 @@
       "id": "real",
       "name": "Real",
       "draw_time": "12:55 PM",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "numbers": [
-        "03",
+        "31",
         "77",
-        "87"
+        "53"
       ],
       "status": "done"
     },
@@ -55,11 +55,11 @@
       "id": "loteka-tarde",
       "name": "Loteka Tarde",
       "draw_time": "1:30 PM",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "numbers": [
-        "30",
-        "84",
-        "60"
+        "95",
+        "34",
+        "17"
       ],
       "status": "done"
     },
@@ -67,11 +67,11 @@
       "id": "gana-mas",
       "name": "Nacional Gana Más",
       "draw_time": "2:30 PM",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "numbers": [
-        "62",
-        "87",
-        "49"
+        "69",
+        "13",
+        "15"
       ],
       "status": "done"
     },
