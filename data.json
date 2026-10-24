@@ -1,6 +1,6 @@
 {
   "date": "2026-10-23",
-  "updated_at": "2026-10-23T20:28:32-04:00",
+  "updated_at": "2026-10-23T21:28:53-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -127,11 +127,11 @@
       "id": "leidsa",
       "name": "Leidsa",
       "draw_time": "8:50 PM",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "numbers": [
-        "66",
-        "61",
-        "23"
+        "07",
+        "93",
+        "12"
       ],
       "status": "done"
     },
@@ -139,11 +139,11 @@
       "id": "nacional-noche",
       "name": "Nacional Noche",
       "draw_time": "9:00 PM",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "numbers": [
-        "59",
-        "09",
-        "96"
+        "43",
+        "39",
+        "61"
       ],
       "status": "done"
     }
