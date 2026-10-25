@@ -1,6 +1,6 @@
 {
   "date": "2026-10-25",
-  "updated_at": "2026-10-25T15:54:41-04:00",
+  "updated_at": "2026-10-25T17:08:01-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -127,11 +127,11 @@
       "id": "leidsa",
       "name": "Leidsa",
       "draw_time": "8:50 PM",
-      "date": "2026-10-24",
+      "date": "2026-10-25",
       "numbers": [
-        "86",
-        "62",
-        "58"
+        "16",
+        "93",
+        "03"
       ],
       "status": "done"
     },
