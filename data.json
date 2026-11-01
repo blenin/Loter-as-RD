@@ -1,17 +1,17 @@
 {
   "date": "2026-11-01",
-  "updated_at": "2026-11-01T03:12:14-04:00",
+  "updated_at": "2026-11-01T16:26:11-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
       "id": "la-primera",
       "name": "La Primera",
       "draw_time": "12:00 PM",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "numbers": [
-        "92",
-        "60",
-        "75"
+        "54",
+        "33",
+        "19"
       ],
       "status": "done"
     },
@@ -19,11 +19,11 @@
       "id": "lotedom",
       "name": "LoteDom",
       "draw_time": "12:00 PM",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "numbers": [
-        "57",
-        "42",
-        "86"
+        "23",
+        "01",
+        "10"
       ],
       "status": "done"
     },
@@ -31,11 +31,11 @@
       "id": "la-suerte",
       "name": "La Suerte",
       "draw_time": "12:30 PM",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "numbers": [
-        "47",
-        "88",
-        "40"
+        "02",
+        "68",
+        "10"
       ],
       "status": "done"
     },
@@ -43,11 +43,11 @@
       "id": "real",
       "name": "Real",
       "draw_time": "12:55 PM",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "numbers": [
-        "67",
-        "62",
-        "97"
+        "35",
+        "78",
+        "15"
       ],
       "status": "done"
     },
@@ -55,11 +55,11 @@
       "id": "loteka-tarde",
       "name": "Loteka Tarde",
       "draw_time": "1:30 PM",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "numbers": [
-        "40",
-        "58",
-        "56"
+        "94",
+        "38",
+        "54"
       ],
       "status": "done"
     },
@@ -67,11 +67,11 @@
       "id": "gana-mas",
       "name": "Nacional Gana Más",
       "draw_time": "2:30 PM",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "numbers": [
-        "60",
-        "03",
-        "02"
+        "14",
+        "17",
+        "10"
       ],
       "status": "done"
     },
@@ -127,11 +127,11 @@
       "id": "leidsa",
       "name": "Leidsa",
       "draw_time": "8:50 PM",
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "numbers": [
-        "99",
-        "87",
-        "52"
+        "80",
+        "83",
+        "48"
       ],
       "status": "done"
     },
@@ -154,6 +154,23 @@
       "name": "Powerball",
       "draw_time": "10:59 PM",
       "draw_days": "Lun · Mié · Sáb",
+      "date": "2026-10-31",
+      "numbers": [
+        "02",
+        "04",
+        "18",
+        "50",
+        "56"
+      ],
+      "bonus": "20",
+      "multiplier": "3",
+      "status": "done"
+    },
+    {
+      "id": "powerball",
+      "name": "Powerball",
+      "draw_time": "10:59 PM",
+      "draw_days": "Lun · Mié · Sáb",
       "date": "2026-10-28",
       "numbers": [
         "11",
@@ -164,23 +181,6 @@
       ],
       "bonus": "13",
       "multiplier": "2",
-      "status": "done"
-    },
-    {
-      "id": "powerball",
-      "name": "Powerball",
-      "draw_time": "10:59 PM",
-      "draw_days": "Lun · Mié · Sáb",
-      "date": "2026-10-26",
-      "numbers": [
-        "18",
-        "26",
-        "49",
-        "50",
-        "54"
-      ],
-      "bonus": "01",
-      "multiplier": "3",
       "status": "done"
     },
     {
