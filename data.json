@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "updated_at": "2026-11-04T18:03:52-04:00",
+  "updated_at": "2026-11-04T18:29:07-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -79,11 +79,11 @@
       "id": "la-suerte-noche",
       "name": "La Suerte Noche",
       "draw_time": "6:00 PM",
-      "date": "2026-11-03",
+      "date": "2026-11-04",
       "numbers": [
-        "88",
-        "99",
-        "08"
+        "37",
+        "90",
+        "03"
       ],
       "status": "done"
     },
