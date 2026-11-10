@@ -1,6 +1,6 @@
 {
   "date": "2026-11-09",
-  "updated_at": "2026-11-09T20:50:21-04:00",
+  "updated_at": "2026-11-09T21:43:26-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -127,11 +127,11 @@
       "id": "leidsa",
       "name": "Leidsa",
       "draw_time": "8:50 PM",
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "numbers": [
-        "20",
-        "94",
-        "97"
+        "62",
+        "41",
+        "63"
       ],
       "status": "done"
     },
@@ -139,11 +139,11 @@
       "id": "nacional-noche",
       "name": "Nacional Noche",
       "draw_time": "9:00 PM",
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "numbers": [
-        "08",
-        "73",
-        "11"
+        "60",
+        "48",
+        "99"
       ],
       "status": "done"
     }
