@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T19:32:15-04:00",
+  "updated_at": "2026-11-18T20:40:36-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -103,11 +103,11 @@
       "id": "loteka",
       "name": "Loteka",
       "draw_time": "7:50 PM",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "numbers": [
-        "09",
-        "15",
-        "36"
+        "84",
+        "64",
+        "09"
       ],
       "status": "done"
     },
@@ -115,11 +115,11 @@
       "id": "real-noche",
       "name": "Real Noche",
       "draw_time": "8:00 PM",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "numbers": [
-        "60",
-        "25",
-        "39"
+        "21",
+        "31",
+        "80"
       ],
       "status": "done"
     },
