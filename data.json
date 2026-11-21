@@ -1,6 +1,6 @@
 {
   "date": "2026-11-21",
-  "updated_at": "2026-11-21T18:18:46-04:00",
+  "updated_at": "2026-11-21T19:32:04-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -91,11 +91,11 @@
       "id": "la-primera-noche",
       "name": "La Primera Noche",
       "draw_time": "7:00 PM",
-      "date": "2026-11-20",
+      "date": "2026-11-21",
       "numbers": [
-        "51",
-        "01",
-        "90"
+        "04",
+        "90",
+        "49"
       ],
       "status": "done"
     },
