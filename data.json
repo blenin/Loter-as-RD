@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "updated_at": "2026-11-24T03:07:51-04:00",
+  "updated_at": "2026-11-24T04:46:16-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -154,6 +154,23 @@
       "name": "Powerball",
       "draw_time": "10:59 PM",
       "draw_days": "Lun · Mié · Sáb",
+      "date": "2026-11-23",
+      "numbers": [
+        "07",
+        "09",
+        "27",
+        "40",
+        "58"
+      ],
+      "bonus": "19",
+      "multiplier": "2",
+      "status": "done"
+    },
+    {
+      "id": "powerball",
+      "name": "Powerball",
+      "draw_time": "10:59 PM",
+      "draw_days": "Lun · Mié · Sáb",
       "date": "2026-11-21",
       "numbers": [
         "05",
@@ -163,23 +180,6 @@
         "45"
       ],
       "bonus": "22",
-      "multiplier": "2",
-      "status": "done"
-    },
-    {
-      "id": "powerball",
-      "name": "Powerball",
-      "draw_time": "10:59 PM",
-      "draw_days": "Lun · Mié · Sáb",
-      "date": "2026-11-18",
-      "numbers": [
-        "18",
-        "31",
-        "43",
-        "51",
-        "62"
-      ],
-      "bonus": "12",
       "multiplier": "2",
       "status": "done"
     },
