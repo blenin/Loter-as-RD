@@ -1,6 +1,6 @@
 {
   "date": "2026-11-25",
-  "updated_at": "2026-11-25T03:20:40-04:00",
+  "updated_at": "2026-11-25T05:16:17-04:00",
   "source": "https://enloteria.com/resultados-loterias-hoy",
   "results": [
     {
@@ -188,15 +188,15 @@
       "name": "Mega Millions",
       "draw_time": "11:00 PM",
       "draw_days": "Mar · Vie",
-      "date": "2026-11-20",
+      "date": "2026-11-24",
       "numbers": [
-        "32",
-        "35",
-        "48",
-        "58",
-        "61"
+        "38",
+        "42",
+        "44",
+        "45",
+        "62"
       ],
-      "bonus": "21",
+      "bonus": "16",
       "multiplier": null,
       "status": "done"
     },
@@ -205,13 +205,13 @@
       "name": "Mega Millions",
       "draw_time": "11:00 PM",
       "draw_days": "Mar · Vie",
-      "date": "2026-11-17",
+      "date": "2026-11-20",
       "numbers": [
-        "03",
-        "10",
-        "19",
-        "28",
-        "33"
+        "32",
+        "35",
+        "48",
+        "58",
+        "61"
       ],
       "bonus": "21",
       "multiplier": null,
